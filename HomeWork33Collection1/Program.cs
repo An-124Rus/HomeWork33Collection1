@@ -25,6 +25,10 @@
                 Console.Write($"\nВведите страну с большой буквы или введите {exitCommand}: ");
                 country = Console.ReadLine();
             }
+            else if (country == exitCommand)
+            {
+                isWorking = false;
+            }
             else
             {
                 Console.WriteLine("\nТакой страны нет в базе.");
@@ -32,8 +36,7 @@
                 country = Console.ReadLine();
             }
 
-            if (country == exitCommand)
-                isWorking = false;
+
         }
     }
 
