@@ -35,8 +35,6 @@
                 Console.Write($"\nВведите страну с большой буквы или введите {exitCommand}: ");
                 country = Console.ReadLine();
             }
-
-
         }
     }
 
