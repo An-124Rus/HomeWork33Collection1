@@ -12,7 +12,7 @@
     static void SearchCapital(Dictionary<string, string> countries)
     {
         bool isWorking = true;
-        string ExitCommand = "esc";
+        string exitCommand = "esc";
 
         Console.Write("Введите страну с большой буквы: ");
         string country = Console.ReadLine();
@@ -22,17 +22,17 @@
             if (countries.ContainsKey(country))
             {
                 Console.WriteLine($"\nСтрана - {country}, столица - {countries[country]}");
-                Console.Write($"\nВведите страну с большой буквы или введите {ExitCommand}: ");
+                Console.Write($"\nВведите страну с большой буквы или введите {exitCommand}: ");
                 country = Console.ReadLine();
             }
             else
             {
                 Console.WriteLine("\nТакой страны нет в базе.");
-                Console.Write($"\nВведите страну с большой буквы или введите {ExitCommand}: ");
+                Console.Write($"\nВведите страну с большой буквы или введите {exitCommand}: ");
                 country = Console.ReadLine();
             }
 
-            if (country == ExitCommand)
+            if (country == exitCommand)
                 isWorking = false;
         }
     }
